@@ -7,4 +7,27 @@ fn main {
   vm.run()
   println("[GRVM] Halt.")
 }
+fn darved {
+  let args = get_args() // ["dar", "add", "http"]
+  
+  if args.length() < 2 {
+    dar_help()
+    return
+  }
+
+  match args[1] {
+    "init" => dar_init()
+    "add" => {
+      if args.length() > 2 { dar_add(args[2]) }
+    }
+    "install" => dar_install()
+    "remove" => {
+      if args.length() > 2 { dar_remove(args[2]) }
+    }
+    "run" => {
+      if args.length() > 2 { dar_run(args[2]) }
+    }
+    "build" => dar_build()
+    _ => dar_help()
+  }
 }
