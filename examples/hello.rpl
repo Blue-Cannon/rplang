@@ -1,0 +1,4 @@
+USE LANG:1
+ say "Hello, World!"
+ end say
+end
