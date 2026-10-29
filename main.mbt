@@ -1,6 +1,7 @@
 fn main {
   let tokens = @lex.lex(code)
   let ast = @parse.parse(tokens)
+  let vm = compile(program)
   @interp.interpret(ast)
   println("[GRVM] Starting Gengine Ramos VM v0.1.0...")
   vm.run()
