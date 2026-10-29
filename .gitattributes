@@ -1,1 +1,19 @@
+# RPLang files
+*.rpl linguist-language=RPLang
+*.rplang linguist-language=RPLang
+*.mbt linguist-language=MoonBit
 
+# Ensure line endings
+*.rpl text eol=lf
+*.mbt text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# GitHub stats - ignore generated
+_target/ linguist-vendored
+.moon/ linguist-vendored
+
+# Binary
+*.png binary
+*.jpg binary
+*.wasm binary
