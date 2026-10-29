@@ -1,0 +1,38 @@
+# MoonBit build outputs
+_target/
+.moon/
+_build/
+*.wasm
+*.wat
+
+# MoonBit cache
+.mooncakes/
+moon.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# RPLang compiled outputs
+*.rplb
+*.rplc
+bin/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+
+# RPLang 
+rake_modules/
+*.rsp
+*.cake
